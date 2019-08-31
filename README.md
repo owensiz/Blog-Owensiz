@@ -1,7 +1,7 @@
 # Blog-Owensiz
-## note, note, note, always note.
+## 🙋note, note, note, always note.
 
-### commitLint： 
+### ✍️commitLint： 
 #### 常规：
 feat 新增
 #### 快速commit： 
