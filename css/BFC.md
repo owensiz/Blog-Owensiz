@@ -52,7 +52,7 @@ Block Formatting Contexts，翻译过来是 块级格式化上下文。
 ## 4 BFC的应用
 > 使用说明，复制代码去[这里](http://js.jirengu.com/rukex/1/edit)，查看效果。
 ### 4-1 创建新的BFC来避免外边距折叠（Margin collapsing）的问题。
-> 参见 -> demo -> BFC-1.html， 调试css看看
+> 参见 -> demo -> css -> BFC-1.html， 调试css看看
 > 当使用overflowd等属性只是为了创建BFC的时候，可能会产生一些其他影响，需要注意。最好写明注释表明目的，以免对后续开发造成误解。
 ```
 <!-- css -->
@@ -90,7 +90,7 @@ div{
 ```
 
 ### 4-3 使兄弟元素互不干扰，方便形成两栏布局。（与浮动兄弟元素产生边界）
-> 参见 -> demo -> BFC-2.html， 调试css看看
+> 参见 -> demo -> css -> BFC-2.html， 调试css看看
 
 > display: flow-root 一个新的 display 属性值，用于创建无副作用的BFC。在父级块中使用 display: flow-root 可以创建新的BFC。
 
