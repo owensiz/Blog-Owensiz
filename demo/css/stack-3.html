@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .parent {
+      background-color: teal;
+      border: 1px solid black;
+      display: flex; 
+      z-index: 0;
+      /* 形成层叠上下文：z-index 值不为 auto 的flex元素 */
+    }
+    .child {
+      background-color: tan;
+      width: 100px;
+      height: 200px;
+      z-index: 1;
+    }
+    .grandchild {
+      background-color: plum;
+      position: relative;
+      z-index: -1;
+      /* FOCUS: 
+      z-index为负数的层叠等级高于形成层叠上下文的元素，见层叠等级图。*/
+      width: 200px;
+      height: 100px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">parent
+    <div class="child">child
+        <div class="grandchild">grandchild</div>
+    </div>
+    
+  </div>
+</body>
+</html>

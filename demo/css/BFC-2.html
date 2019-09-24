@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .side-bar{
+      width: 100px;
+      background-color: plum;
+      border: 10px solid tan;
+      float: left;
+      min-height: 200px;
+      margin-right: 20px;
+    }
+    .main {
+      background-color: yellowgreen;
+      /* float: left; */
+      display: flow-root; /* 创建BFC */
+      border: 10px solid tan;
+      min-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="side-bar"></div>
+  <div class="main"></div>
+</body>
+</html>
