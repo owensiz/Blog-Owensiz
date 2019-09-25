@@ -1,6 +1,6 @@
-# 微信小程序生命周期钩子罗列
+# 页面生命周期钩子罗列
 
-## 页面生命周期 
+## 页面级别
 
 ### 所在位置： 
 1. 指南 - 小程序框架 - 页面生命周期 + 路由方式
@@ -57,48 +57,3 @@ Page({
 - 页面底部的 tabBar 由页面决定，即只要是定义为 tabBar 的页面，底部都有 tabBar。
 - 调用页面路由带的参数可以在目标页面的onLoad中获取。
 
-
-## 组件生命周期 
-
-### 所在位置： 
-指南 - 自定义组件 - 组件生命周期 
-### 罗列：
-#### 定义生命周期
-- created *
-- attached *
-- ready
-- moved
-- detached *
-- error
-```
-// 自小程序基础库版本 2.2.3 起，组件的的生命周期也可以在 lifetimes 字段内进行声明（这是推荐的方式，其优先级最高）。
-Component({
-  lifetimes: {
-    attached: function() {
-      // 在组件实例进入页面节点树时执行
-    },
-    detached: function() {
-      // 在组件实例被从页面节点树移除时执行
-    },
-  },
-```
-#### 组件所在页面的生命周期
-- show
-- hide
-- resize 
-
-```
-Component({
-  pageLifetimes: {
-    show: function() {
-      // 页面被展示
-    },
-    hide: function() {
-      // 页面被隐藏
-    },
-    resize: function(size) {
-      // 页面尺寸变化
-    }
-  }
-})
-```
